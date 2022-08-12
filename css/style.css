@@ -729,6 +729,9 @@ h4 {
   .header-menu {
     display: none;
   }
+  .footer {
+    width: 100%;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
@@ -790,7 +793,7 @@ h4 {
   .post-content:not(:last-child) {
     margin-bottom: 40px;
   }
-  
+
   .products-row {
     flex-wrap: wrap;
     justify-content: space-between;
