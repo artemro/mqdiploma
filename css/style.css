@@ -51,7 +51,7 @@ h4 {
   opacity: 0.6;
   z-index: 2;
   width: 100%;
-  height: 450px;
+  height: 100%;
 }
 
 .container-header {
@@ -640,12 +640,19 @@ h4 {
   width: 140px;
   height: 48px;
   background-color: #b59f5b;
-  border: 0;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 48px;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.text-shop-button {
+  justify-content: center;
 }
 
 .shop-button:hover {
@@ -732,11 +739,34 @@ h4 {
   .footer {
     width: 100%;
   }
+ .article-trends {
+    flex-wrap: wrap;
+  }
+  .post-content {
+    flex-direction: column;
+    border-bottom: 3px #eee solid;
+    padding-bottom: 20px;
+  }
+
+  .post-text-content {
+    margin-left: 0px;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 540px;
+  }
+
+  .post-content:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .products-row {
+    flex-wrap: wrap;
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
   .banner-header {
     background-image: url(../images/banner-bg-tablet.jpg);
+    height: 390px;
   } 
 
   .container-header {
@@ -744,8 +774,9 @@ h4 {
     padding-right: 35px;
   }
 
-  .article-trends {
-    flex-wrap: wrap;
+  .header-title {
+    font-size: 36px;
+    line-height: 44px;
   }
   
   .trend-box {
@@ -766,32 +797,6 @@ h4 {
 
   .main-content {
     width: calc(85% - 270px); /* -15% for space between main and aside */
-    max-width: 540px; 
-  }
-
-  .post-content {
-    flex-direction: column;
-  }
-
-  .post-text-content::after {
-    content: "";
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 3px;
-    background-color: #eee;
-    margin-top: 15px;
-  }
-
-  .post-text-content {
-    margin-left: 0px;
-    margin-top: 15px;
-    width: 100%;
-    max-width: 540px;
-  }
-
-  .post-content:not(:last-child) {
-    margin-bottom: 40px;
   }
 
   .products-row {
@@ -806,5 +811,100 @@ h4 {
   }
   .product-img {
     object-fit: cover;
+  }
+}
+
+@media (max-width: 640px) {
+  .banner-header {
+    background-image: url(../images/banner-mobile.jpg);
+    background-size: cover;
+    height: 619px;
+  }
+
+  .container-header {
+    height: 50%;
+    align-items: unset;
+    padding: 0 15px 0 38px;
+  }
+
+  .noemi-logo-block {
+    display: flex;
+    align-items: flex-end;
+    width: calc(100% - 23px);
+  }
+
+  .noemi-logo {
+    width: calc(100% - 23px);
+  }
+
+  .header-navigation {
+    align-items: flex-start;
+  }
+
+  .header-title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .trend-box {
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 2px;
+  }
+
+  .page {
+    flex-direction: column;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .post-content {
+    flex-direction: column;
+  }
+
+  .aside-content {
+    width: 100%;
+  }
+
+  .post-content:last-child {
+    margin-bottom: 40px;
+  }
+
+  .search-form {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .post-search-label {
+    width: 100%;
+  }
+
+  .distribution-form {
+    width: 100%;
+  }
+
+  .email-input {
+    width: 100%;
+  }
+
+  .distribution-button {
+    width: 100%;
+  }
+
+  .topic::after {
+    width: 100%;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .product:nth-child(n+2) {
+    margin-top: 25px;
   }
 }
