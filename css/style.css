@@ -778,7 +778,7 @@ h4 {
     font-size: 36px;
     line-height: 44px;
   }
-  
+
   .trend-box {
     width: calc(50% - 4px);
   }
@@ -914,5 +914,24 @@ h4 {
 
   .product:nth-child(n+2) {
     margin-top: 25px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+  
+  .trend-box {
+    width: 25%;
+  }
+
+  .trend-box:nth-child(n+3) {
+    margin-top: 0px;
+  }
+
+  .trend-box:not(:last-child) {
+    margin-right: 4px;
+  }
+
+  .article-trends {
+    flex-wrap: unset;
   }
 }
