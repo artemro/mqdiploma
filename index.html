@@ -72,7 +72,38 @@
         </div>
       </div>
     </div>
-</section>
+</section> 
+
+<div class="popup-wrapper"> 
+  <div class="popup">
+    <form class="feedback-form">
+    <h3 class="aside-header feedback-header">Ваш фидбек</h3>
+    <p class="popup-feedback">Как часто вы заходите на сайт?</p>
+    <label class="feedback-label">
+      <input type="text" class="input-feedback" placeholder="Почти каждый день">
+      <span class="visually-hidden">Как часто вы заходите на сайт</span>
+    </label>
+    <p class="popup-feedback email-text">Вы подписаны на e-mail рассылку?</p>
+    <label class="radio-label">
+      <input type="radio" class="input-radio-feedback" name="radio-feedback">
+      <span class="radio-feedback-text">Да</span>
+    </label>
+    <label class="radio-label">
+      <input type="radio" class="input-radio-feedback" name="radio-feedback">
+      <span class="radio-feedback-text">Нет</span>      
+    </label>
+    <p class="popup-feedback textarea-text">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</p>
+    <div class="textarea-wrapper">
+    <textarea class="feedback-textarea" placeholder="Может, больше рецептов?">Может, больше рецептов?
+    </textarea>
+    <button class="distribution-button feedback-button" type="submit">
+      Отправить
+      <span class="visually-hidden">Отправить</span>
+    </button>
+    </div>
+    </form>
+  </div>  
+</div>
 
 <div class="page">
   <main class="main-content">
@@ -244,7 +275,8 @@
         <button class="distribution-button" type="submit">
           Подписаться
           <span class="visually-hidden">Подписаться</span>
-        </button>      
+        </button>
+      </form>      
     </section>
     
     <section class="tags">
